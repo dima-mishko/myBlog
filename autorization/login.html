@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="/myBlog/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class='container'>
+			<nav class='navbar navbar-default'>
+			<div class='container'>
+				<div class='navbar-header'>
+					<button type='button' class = 'navbar-toggle colapsed' data-toogle='colapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar'>
+						<span class='sr-only'></span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+					</button>
+					<a class='navbar-brand' href='/myBlog/index.php'>myBlog</a>
+				</div>
+				<div id ='navbar' class='navbar-collapse collapse'>
+					<ul class=' nav navbar-nav'>
+						<li id='lastPosts' style='' class=''>
+							<a href='/myBlog/index.php'>Last articles</a>
+						</li>
+						<li id='wiewed' style=''>
+							<a href='/myBlog/wiewed.php'>popular</a>
+						</li>
+						<li id='bestBloggers' style=''>
+							<a href='/myBlog/bestBlogers.php'>best blogers</a>
+						</li>
+						<li id='login' style=''>
+							<a href='/myBlog/autorization/login.html'>login</a>
+						</li>
+						<li id='registration' style=''>
+							<a href='/myBlog/registration/registration.html'>register</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<form class="form-signin" method='POST' action='/myBlog/autorization/login.php'>
+		  <div class="form-group">
+			<label for="inputLogin">Login</label>
+			<input type="text" class="form-control" name='inputLogin' id="inputLogin" placeholder="Login" required>
+		  </div>
+		  <div class="form-group">
+			<label for="InputPassword">Password</label>
+			<input type="password" class="form-control" name='InputPassword' id="InputPassword" placeholder="Password" required>
+		  </div>
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox" name='checkbox'> another's computer
+			</label>
+		  </div>
+		  <button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/myBlog/js/bootstrap.min.js"></script>
+  </body>
+</html>
